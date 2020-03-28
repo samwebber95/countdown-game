@@ -9,12 +9,11 @@ function Answers({ answer, answers, setAnswer, setAnswers }) {
 
   function displayAnswer(answer) {
     setAnswers([...answers, answer]);
-    console.log(answer);
+    console.log(answers);
   }
 
   function handleChange(event) {
     setAnswer(event.target.value);
-    console.log(event.target.value);
   }
 
   return (
@@ -27,7 +26,6 @@ function Answers({ answer, answers, setAnswer, setAnswers }) {
         placeholder="Answer here"
       ></input>
       <p>{answers}</p>
-      <p>{answer}</p>
     </>
   );
 }
