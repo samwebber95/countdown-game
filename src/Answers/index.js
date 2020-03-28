@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Answers() {
-  const [answer, setAnswer] = useState("");
-  const [answers, setAnswers] = useState([]);
+function Answers({ answer, answers, setAnswer, setAnswers }) {
   function handleKeyDown(event) {
     if (event.key === "enter") {
       displayAnswer();
