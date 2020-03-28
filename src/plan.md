@@ -5,8 +5,8 @@ COMPONENTS
 - APP
 - DISPLAY GAME
 
-  - 2 BUTTONS VOWELS / CONSENANTS
-  - list to display set of letters of 8
+  - 2 BUTTONS VOWELS / CONSENANTS - done
+  - list to display set of letters of 8 - done
   - CLEAR BOARD button, set state to ([])
 
 - TIMER
