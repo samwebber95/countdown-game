@@ -4,12 +4,16 @@ import Display from "../Display/index";
 import Answers from "../Answers/index";
 import RachelRiley from "../RachelRiley/index";
 import Timer from "../Timer/index";
-//import AnswerDisplay from "../AnswerDisplay/index";
+// import DisplayList from "../DisplayList/DisplayList";
 
 function App() {
   const [letters, setLetters] = useState([]);
   const [answer, setAnswer] = useState("");
-  const [answers, setAnswers] = useState("");
+  const [answers, setAnswers] = useState([]);
+
+  function addToList(newItem) {
+    setAnswers([...answers, newItem]);
+  }
 
   return (
     <div className="App">
@@ -19,7 +23,9 @@ function App() {
         answers={answers}
         setAnswer={setAnswer}
         setAnswers={setAnswers}
+        addToList={addToList}
       />
+      {/* <DisplayList answers={answers} /> */}
       <RachelRiley letters={letters} />
       <Timer letters={letters} />
     </div>
