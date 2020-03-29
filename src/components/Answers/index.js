@@ -1,4 +1,5 @@
 import React from "react";
+import css from "./Answers.modules.css";
 
 function Answers({ answer, answers, setAnswer, addToList }) {
   // const [text, setText] = useState("");
@@ -46,7 +47,11 @@ function Answers({ answer, answers, setAnswer, addToList }) {
         type="text"
         placeholder="Answer here"
       ></input>
-      <p>{answers}</p>
+      <ul className={css.answers}>
+        {answers.map(item => {
+          return <li>{item}</li>;
+        })}
+      </ul>
     </div>
   );
 }
