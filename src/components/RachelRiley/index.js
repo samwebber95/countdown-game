@@ -2,12 +2,6 @@ import React from "react";
 import css from "./index.module.css";
 
 function RachelRiley({ letters }) {
-  function setSpeech() {
-    console.log(`you chose ${letters}`);
-  }
-
-  setSpeech();
-
   return (
     <div>
       <img

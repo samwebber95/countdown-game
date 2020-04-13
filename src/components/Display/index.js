@@ -1,6 +1,6 @@
 import React from "react";
 
-function Display({ letters, setLetters }) {
+function Display({ letters, setLetters, startTimer }) {
   function getVowel() {
     const vowels = ["a", "e", "i", "o", "u"];
     const randomVowel = Math.floor(Math.random() * vowels.length);
@@ -44,6 +44,9 @@ function Display({ letters, setLetters }) {
   }
 
   function renderLetter(vowel) {
+    if (letters.length > 7) {
+      startTimer();
+    }
     setLetters([...letters, vowel]);
   }
 
@@ -54,7 +57,7 @@ function Display({ letters, setLetters }) {
   return (
     <div>
       <h1>Welcome to COUNTDOWN</h1>
-      <p>{letters}</p>
+      <p>Round letters: {letters}</p>
       <button onClick={clearBoard}>Clear Board</button>
       <button onClick={getVowel}>Vowel</button>
       <button onClick={getConsonant}>Consonant</button>

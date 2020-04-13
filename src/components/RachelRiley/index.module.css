@@ -1,8 +1,12 @@
 .hostImage {
   height: 570px;
+  position: absolute;
+  left: 10px;
 }
 
 .hostSpeechBubble {
+  position: absolute;
+  left: 100px;
   height: 100px;
   width: 300px;
 }
