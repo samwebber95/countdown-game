@@ -4,6 +4,7 @@ function Timer({ time, startTimer }) {
   return (
     <div>
       <p>Time:{time}</p>
+      <button onClick={startTimer}>Start Timer</button>
     </div>
   );
 }
