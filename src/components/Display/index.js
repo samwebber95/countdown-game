@@ -34,7 +34,7 @@ function Display({ letters, setLetters, startTimer }) {
       "w",
       "x",
       "y",
-      "z"
+      "z",
     ];
     const randomConsonant = Math.floor(Math.random() * consonants.length);
     const consonant = consonants[randomConsonant];
