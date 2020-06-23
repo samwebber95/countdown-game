@@ -63,6 +63,7 @@ function App() {
       {/* <DisplayList answers={answers} /> */}
       <RachelRiley letters={letters} />
       <Timer time={time} startTimer={startTimer} />
+      <button onClick={reset}>Reset Timer</button>
     </div>
   );
 }

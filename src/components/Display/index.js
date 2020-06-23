@@ -1,6 +1,7 @@
 import React from "react";
 
 function Display({ letters, setLetters, startTimer }) {
+  
   function getVowel() {
     const vowels = ["a", "e", "i", "o", "u"];
     const randomVowel = Math.floor(Math.random() * vowels.length);
